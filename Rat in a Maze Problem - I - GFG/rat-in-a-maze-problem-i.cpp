@@ -10,7 +10,7 @@ using namespace std;
 
 class Solution{
     private:
-    bool isSafe(int x, int y, int n, vector<vector<int>>& m, vector<vector<int>>& visited) {
+    bool isSafe(int x, int y, int n, vector<vector<int>> m, vector<vector<int>> visited) {
         if (x >= 0 && x < n && y >= 0 && y < n && visited[x][y] == 0 && m[x][y] == 1)
             return true;
         else
