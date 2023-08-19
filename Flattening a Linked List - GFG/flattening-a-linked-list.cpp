@@ -142,8 +142,8 @@ Node *flatten(Node *root)
    return NULL;
    if(root->next==NULL)
    return root;
-   
-   mergetwosorted(root,flatten(root->next));
+   root->next=flatten(root->next);
+   mergetwosorted(root,root->next);
    return root;
    
 }
